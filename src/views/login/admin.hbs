@@ -5,17 +5,30 @@
       <thead>
         <tr class="bg-green-500 text-white">
           <th class="w-20 py-4 ...">ID</th>
-          <th class="w-1/4 py-4 ...">NAME</th>
-          <th class="w-1/2 py-4 ...">LASTNAME</th>
+          <th class="w-20 py-4 ...">NAME</th>
+          <th class="w-20 py-4 ...">LASTNAME</th>
+          <th class="w-20 py-4 ...">EMAIL</th>
+          <th class="w-20 py-4 ...">SALARY</th>
+          <th class="w-20 py-4 ...">JOB</th>
+          <th class="w-20 py-4 ...">AGE</th>
+          <th class="w-20 py-4 ...">ROLE</th>
+          
         
         </tr>
       </thead>
       <tbody>
-        {{#each users}}
+        {{#each users }}
         <tr>
           <td class="py-3 px-6">{{id}}</td>
           <td class="p-3">{{first_name}}</td>
-          <td class="p-3 text-center">{{Last_name}}</td>
+          <td class="p-3">{{Last_name}}</td>
+          <td class="py-3">{{email}}</td>
+          <td class="p-3">{{salary}}</td>
+          <td class="p-3">{{job}}</td>
+          <td class="py-3 px-6">{{age}}</td>
+          <td class="p-3">{{role}}</td>
+          
+         
           <td class="p-3 flex">
            
               <button class="bg-red-500 text-white px-3 py-1 rounded-sm" type="submit">

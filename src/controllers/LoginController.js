@@ -155,19 +155,21 @@ function admin (req,res) {
         res.redirect('/');
     }
    
-    }
-function puta (req,res) {
+    
+
     req.getConnection((err,conn) => {
         conn.query('SELECT * FROM users', (err,users) => {
             if(err) {
                 res.json(err);
             }
-            //res.render('login/admin', { users });
-            console.log(users);
+            res.render('login/admin', { users });
+            console.log('sijalo');
         
         });
     });
 }
+
+
 
 
 
@@ -198,6 +200,6 @@ module.exports = {
     credito,
     loanEstimate,
     admin,
-    puta
+    
     
 }
